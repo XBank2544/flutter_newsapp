@@ -13,6 +13,7 @@ class _NewspageState extends State<Newspage> {
   var jsonData;
   List<THNewsData> dataList = [];
 
+  // ignore: non_constant_identifier_names
   Future<String> _GatNewsAPI() async {
     var respones = await Http.get(Uri.parse(
         'https://newsapi.org/v2/top-headlines?country=th&category=business&apiKey=0a6ff783da954900ad0cf134e838696f'));
